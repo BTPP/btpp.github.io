@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 102%;  /* this will create a container 80% of the browser width */
+	background: #9933CC;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+.twoColLiqLtHdr #header {
+	background: #990099;
+	padding: 0 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left;
+	width: auto;
+	background-color: #000000;
+	padding-top: 15px;
+	padding-right: 0;
+	padding-bottom: 15px;
+	padding-left: 0;
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 20px 0 26%; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#DDDDDD;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.style1 {font-family: Arial, Helvetica, sans-serif}
+.style3 {font-family: Arial, Helvetica, sans-serif; font-style: italic; font-weight: bold; }
+.style4 {font-family: Arial, Helvetica, sans-serif; font-style: italic; font-weight: bold; font-size: 150%; }
+.style5 {font-family: Arial, Helvetica, sans-serif; font-style: italic; font-weight: bold; font-size: 150%; color: #CC33CC; }
+.style6 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+.style8 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	color: #660066;
+}
+--> 
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColLiqLtHdr">
+
+<div id="container"> 
+  <div id="header">
+    <h1><img src="images/TREBLES.png" width="1024" height="225" /></h1>
+  <!-- end #header --></div>
+  <div class="fltrt" id="sidebar1">
+    <h3 align="center" class="style4">  <a href="index.html">Home </a></h3>
+    <h3 align="center" class="style4"><a href="about us.html">About Us </a></h3>
+    <h3 align="center" class="style4"><a href="about the site.html">About The Site</a></h3>
+    <h3 align="center" class="style4"><a href="history of music.html">History Of Music</a></h3>
+    <h3 align="center" class="style4"><a href="musical genres.html">Musical Genres</a></h3>
+    <h3 align="center" class="style4"><a href="components of music.html">Components Of Music</a></h3>
+    <h3 align="center" class="style4"><a href="regional music.html">Regional Music</a></h3>
+    <h3 align="center" class="style4"><a href="musical culture.html">Musical Culture</a></h3>
+    <h3 align="center" class="style5">Musical Impact</h3>
+    <h3 align="center" class="style4"><a href="overcoming musical hurdles.html">Overcoming Musical </a></h3>
+    <h3 align="center" class="style4"><a href="overcoming musical hurdles.html">Hurdles</a></h3>
+    <h3 align="center" class="style4"><a href="music buzz.html">Music Buzz</a></h3>
+    <h3 align="center" class="style4"><a href="instrumental diversity.html">Instrumental Diversity</a></h3>
+    <h3 align="center" class="style4"><a href="interactive zone.html">Interactive Zone</a></h3>
+    <h3 align="center" class="style4"><a href="interactive zone.html">Musical Thoughts </a></h3>
+    <h3 align="center" class="style4"><a href="multimedia gallery.html">Multimedia Gallery</a></h3>
+    <h3 align="center" class="style4"><a href="surveys.html">Surveys </a></h3>
+    <h3 align="center" class="style4"><a href="credits.html">Credits</a></h3>
+    <p align="center" class="style3">&nbsp;</p>
+    <p align="center" class="style3"><img src="http://t3.gstatic.com/images?q=tbn:ANd9GcSqDNpo5LJfukXwry_vXrynTflbEyEpYEzv9cLPyMYhjTge96kzpw" alt="" width="259" height="215" id="rg_hi4" data-width="259" data-height="194" /></p>
+    <h3 align="center" class="style3">&nbsp;</h3>
+    <p align="center" class="style3">&nbsp;</p>
+    <p align="center" class="style1">&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>
+      <!-- end #sidebar1 -->
+    </p>
+    </div>
+  <div id="mainContent">
+    <h1><span class="style8">MUSICAL IMPACT</span></h1>
+  <!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+	<p class="style6">    Most people don't realize the vast impact  music has on our lives every day. We are surrounded by music, yet most people  don't realize the vast impact it has on our everyday mental, physical, and  spiritual health.</p>
+	<p class="style6">Modern researchers delving into why and how music affects our  minds and bodies have come up with some startling facts. For instance, music  creates changes in metabolism, circulation, blood volume, pulse, blood  pressure, and our moods. </p>
+	<p class="style6">Doris Soibelman, author of Therapeutic and Industrial  Uses of Music, claims that nearly every organ in the body responds to music.<img src="http://t3.gstatic.com/images?q=tbn:ANd9GcSgcSXOaCWhe-_9mdhRqvtWy5AbW108cuCU4Vgy7wJ3wH0f4Szn" alt="" name="rg_hi2" width="278" height="181" align="right" id="rg_hi2" data-width="278" data-height="181" /></p>
+	<p class="style6">Music can compel us to laugh, to cry, to  worship God. It can calm us or whip us into an emotional foot-stomping frenzy.  Playing &quot;our song&quot; can trigger memories and nostalgic moods.<br />
+	  In the Bible, David calmed King Saul's moods  by playing the harp. Egyptians used music to calm their insane, and their  mighty pyramids. were built to the rhythmic beat of it.</p>
+	<p class="style6">Different uses for music. Today programmed  music is used to make jogging, walking, and other exercises easier and more  fun. In a recent newspaper interview with a top high school runner, the athlete  attributed his running success partly to music. According to the article, the  runner tunes out distractions and gets the correct mind-set by picking the  right mood music and running with it.</p>
+	<p class="style6">Today scientifically planned music greets us  everywhere and is used in hospital labor rooms and dentist offices to help keep  both doctor and patient calm.<img src="http://t1.gstatic.com/images?q=tbn:ANd9GcS5kNiJ9sRMPz5OK55b2KxlBjZ3qXYlVSCtVz5v0X9uJoJHhMYa" alt="" name="rg_hi3" width="146" height="163" align="right" id="rg_hi3" data-width="130" data-height="134" /></p>
+	<p class="style6">Colleges and universities offer degrees in  music therapy, and almost every mental hospital has a trained music therapist.  Therapists say music often helps bridge the gap between reality and fantasy for  mental patients and can be an effective tool in controlling moods. Even when  minds are closed to all else, music will often break down barriers.</p>
+	<p class="style6">In his book Music for Your Health, Dr. Edward  Podolsky lists several uses for music. For the nervous ulcer patient he advises  a half hour a day spent alone just listening to music of the patient's choice.  For tiredness he suggests listening to some Gershwin classics. If you're on  edge and need to calm down, he recommends tunes like Schubert's &quot;Ave  Maria&quot; or the tranquil Moonlight Sonata.</p>
+	<p class="style6">Researchers have also found that lively music  can be effective in activating a slow pulse and that smoothing music can  sometimes have a calming effect on an overactive heart. Dwight Eisenhower is  said to have used Brahms and Bach to help him recover from a heart attack.</p>
+	<p class="style6">Why we react, Why do our systems react to  music? Researchers believe that music gets to us because we are rhythmic  beings, with rhythm in respiration, heartbeats, brain waves, gait, and speech.  The impact of music appears to be in the way musical sounds reach and affect the  brain.<br />
+    </p>
+	<p class="style6">In 1896 an Italian physician caring for a  13-year-old boy who <img src="http://t0.gstatic.com/images?q=tbn:ANd9GcT9EKs51pKrkfQ1qV8JpC7cO_L_ensnnDZpJlBdM2mX8ZkanInfOQ" alt="" name="rg_hi" width="259" height="194" align="right" id="rg_hi" data-width="259" data-height="194" />had a healed skull wound through which brain pulsations  could be observed experimented with music. He reported that it did indeed  affect the pulsations of the brain. He noted that high notes seemed to produce  bigger changes than those of lower pitch.</p>
+	<p class="style6">The late Dr. Ira N. Alschuler, a psychiatrist  and one time director of musical therapy at Wayne County Hospital in Detroit,  Michigan, reported that &quot;the mental and spiritual drug of music enters the  human being through the thalamus, a part of the brain that is the main relay  station for all emotions, sensations, and feelings. Thus music affects  moods.&quot;</p>
+	<p class="style6">Scientists who have studied programmed music  have found that soft seductive music slows the circulation and reduces the  volume of blood that reaches the brain. Australian music researcher Harry Cox  says that driven or hyperactive individuals can sometimes be helped by tunes  played at a faster tempo and pitch than their own emotional state. Once a  person's attention is captured and he or she starts keeping time with the  music, patterns can be subtly changed to slower tempos, thus giving a sedative  effect.</p>
+	<p class="style6"> The opposite technique has been used with an apathetic individual.  Music therapists have matched a patient's mood with music and then helped the  person alter his or her mood by gradual changes in tempo. It is a slow process  and must be administered by persons trained not only in music but also in human  behavior.</p>
+	<p class="style6">Music in the workplace. In the everyday  working world, scientifically planned background music has been found to  increase production and cut down on boredom, fatigue, and tension. At a  Midwestern university a group of students participating in a musical research  project were assigned monotonous manual jobs that they did in silence. Then a  soft background music was added, and production increased 17 percent.</p>
+	<p>&nbsp;</p>
+	<br class="clearfloat" />
+  <div id="footer"><!-- end #footer -->
+  </div>
+<!-- end #container --></div>
+</body>
+</html>

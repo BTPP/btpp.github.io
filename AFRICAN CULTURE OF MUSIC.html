@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 102%;  /* this will create a container 80% of the browser width */
+	background: #9933CC;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+.twoColLiqLtHdr #header {
+	background: #990099;
+	padding: 0 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left;
+	width: auto;
+	background-color: #000000;
+	padding-top: 15px;
+	padding-right: 0;
+	padding-bottom: 15px;
+	padding-left: 0;
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 20px 0 26%; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#DDDDDD;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.style1 {font-family: Arial, Helvetica, sans-serif}
+.style3 {font-family: Arial, Helvetica, sans-serif; font-style: italic; font-weight: bold; }
+.style4 {font-family: Arial, Helvetica, sans-serif; font-style: italic; font-weight: bold; font-size: 150%; }
+.style5 {font-family: Arial, Helvetica, sans-serif; font-style: italic; font-weight: bold; font-size: 150%; color: #CC33CC; }
+.style6 {
+	color: #660066
+}
+.style9 {font-family: Geneva, Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #000000; }
+.style10 {
+	color: #660066;
+	font-weight: bold;
+	font-style: italic;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+.style11 {color: #000099}
+--> 
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColLiqLtHdr">
+
+<div id="container"> 
+  <div id="header">
+    <h1><img src="images/TREBLES.png" width="1024" height="225" /></h1>
+  <!-- end #header --></div>
+  <div class="fltrt" id="sidebar1">
+    <h3 align="center" class="style4">  <a href="index.html">Home </a></h3>
+    <h3 align="center" class="style4"><a href="about us.html">About Us</a> </h3>
+    <h3 align="center" class="style4"><a href="about the site.html">About The Site</a></h3>
+    <h3 align="center" class="style4"><a href="history of music.html">History Of Music</a></h3>
+    <h3 align="center" class="style4"><a href="musical genres.html">Musical Genres</a></h3>
+    <h3 align="center" class="style4"><a href="components of music.html">Components Of Music</a></h3>
+    <h3 align="center" class="style4"><a href="regional music.html">Regional Music</a></h3>
+    <h3 align="center" class="style5">Musical Culture</h3>
+    <h3 align="center" class="style4"><a href="musical Impact.html">Musical Impact</a></h3>
+    <h3 align="center" class="style4"><a href="overcoming musical hurdles.html">Overcoming Musical </a></h3>
+    <h3 align="center" class="style4"><a href="overcoming musical hurdles.html">Hurdles</a></h3>
+    <h3 align="center" class="style4"><a href="music buzz.html">Music Buzz</a></h3>
+    <h3 align="center" class="style4"><a href="instrumental diversity.html">Instrumental Diversity</a></h3>
+    <h3 align="center" class="style4"><a href="interactive zone.html">Interactive Zone</a></h3>
+    <h3 align="center" class="style4"><a href="musical thoughts.html">Musical Thoughts </a></h3>
+    <h3 align="center" class="style4"><a href="multimedia gallery.html">Multimedia Gallery</a></h3>
+    <h3 align="center" class="style4"><a href="surveys.html">Surveys </a></h3>
+    <h3 align="center" class="style4"><a href="credits.html">Credits</a></h3>
+    <p align="center" class="style3">&nbsp;</p>
+    <p align="center" class="style3"><img src="http://t3.gstatic.com/images?q=tbn:ANd9GcSqDNpo5LJfukXwry_vXrynTflbEyEpYEzv9cLPyMYhjTge96kzpw" alt="" width="259" height="221" id="rg_hi" data-width="259" data-height="194" /></p>
+    <h3 align="center" class="style3">&nbsp;</h3>
+    <p align="center" class="style3">&nbsp;</p>
+    <p align="center" class="style1">&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>
+      <!-- end #sidebar1 -->
+    </p>
+  </div>
+  <div id="mainContent">
+    <blockquote>
+      <h1 class="style10">AFRICAN AMERICAN CULTURE OF MUSIC<span class="style9"><img src="http://i.ehow.co.uk/images/a05/3p/rj/music-influenced-african-drums-1.1-800X800.jpg" alt="" width="205" height="247" align="right"/></span></h1>
+      <p class="style9">Although  the enslaved African people who were brought to America could not bring their  musical instruments with them, they did not forget their musical traditions.  Some slaves were not allowed to speak their native language in America and  added their own traditional styles to European-American songs and dances. They  passed on traditional African musical styles from generation to generation.  Gradually, several styles of African American music emerged in the United  States. Today, two of the best-known styles are <strong>blues</strong> and <strong>jazz.</strong></p>
+      <p class="style9"><span class="style11">BLUES</span><br />
+      </p>
+    </blockquote>
+    <p class="style9">The <strong>blues</strong> most likely began as solo singing. These solo songs may have come  from &quot;field hollers&quot; that slaves yelled while they toiled in the  fields. They also may have come from story songs, called ballads, and other  songs that were sung at lively dances. Blues singers made slight changes to  original melodies and rhythm in order to add emotional expression, including  sounds of moaning or crying. The emotions expressed were often sad and  mournful.  <img src="http://bam.org/viewdocument.aspx?did=4761" alt="" width="241" height="243" align="right"/> <br />
+      <br />
+Later on, instruments such as the guitar, banjo, and  harmonica were added to accompany solo blues singing. Eventually the piano,  bass, drums, brass, and woodwind instruments were also added. Today, musicians  follow a specific form or pattern of phrases when they sing or play the blues.  One of America’s most famous blues singers was Bessie Smith (1894–1937).</p>
+    <p class="style9"><span class="style11">JAZZ</span></p>
+    <p class="style9"><strong>Jazz</strong> probably began in New Orleans, Louisiana, in  the early twentieth century. It started as a mixture of many different types of  music including popular music and the blues. It has changed over the years and  has many different sub-styles, such as Dixieland, swing, bebop, Afro-Cuban,  cool, free jazz, and fusion.  <img src="http://www.south-africa-tours-and-travel.com/images/saxophone-player-southafricanmusic.jpg" alt="" width="251" height="216" align="right"/> </p>
+    <p class="style9">In  jazz the performer often improvises  to create new or different sounds that add to the emotional  expression of the song. Jazz musicians create their own version of the melody  while they are performing. The performers usually begin by playing a tune that  they all know, and then they take turns improvising around that tune. Sometimes  jazz performers make up a completely new melody  that goes with the same chord progression of the original melody. Players or  singers often repeat the melody in its original form at the end of the  selection. In jazz style, performers often &quot;swing&quot; the rhythm of  steady eighth notes, for example. To do this they change an even rhythm to  uneven.<img src="http://www.south-africa-tours-and-travel.com/images/jazz-band-southafricanmusic.jpg" alt="" width="272" height="175" align="right"/></p>
+    <p class="style9">There  are different kinds of jazz bands. A &quot;combo&quot; is a small jazz ensemble  that usually consists of a keyboard, bass, drums, and sometimes guitar. These  form the rhythm section. They support the rhythm and harmony, and each of these  instruments can function as a soloist, trading off with the others. Sometimes a  melody instrument is added, such as a clarinet, saxophone, or trumpet, and there  may be a singer. A &quot;big band&quot; might include five saxophones, five  trombones, five trumpets, and a rhythm section of a keyboard, drums, guitar,  and, in the early days, banjo and tuba.   <br />
+      <br />
+Jazz also uses different timbres for special effects.  Instrumentalists often imitate the same vocal sounds that are used in the  blues, such as moaning, wailing, growling, and shouting. Some jazz singers like  to &quot;scat,&quot; or sing nonsense syllables that sound like instruments  playing jazz. One singer famous for her scat singing was Ella Fitzgerald.<br />
+<br />
+<a href="musical culture.html">BACK TO MUSICAL CULTURE</a><br />
+    </p>
+    <p class="style9">&nbsp;</p>
+    <p class="style9">&nbsp;</p>
+    <p class="style9"><br />
+        </p>
+    <p class="style9">&nbsp;</p>
+    <p class="style6"></p>
+    <p class="style9">&nbsp;</p>
+    <p class="style6">&nbsp;</p>
+  <!-- end #mainContent --></div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+  <div id="footer"><!-- end #footer -->
+  </div>
+<!-- end #container --></div>
+</body>

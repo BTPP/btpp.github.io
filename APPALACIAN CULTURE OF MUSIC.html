@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 102%;  /* this will create a container 80% of the browser width */
+	background: #9933CC;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+.twoColLiqLtHdr #header {
+	background: #990099;
+	padding: 0 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left;
+	width: auto;
+	background-color: #000000;
+	padding-top: 15px;
+	padding-right: 0;
+	padding-bottom: 15px;
+	padding-left: 0;
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 20px 0 26%; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#DDDDDD;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.style1 {font-family: Arial, Helvetica, sans-serif}
+.style3 {font-family: Arial, Helvetica, sans-serif; font-style: italic; font-weight: bold; }
+.style4 {font-family: Arial, Helvetica, sans-serif; font-style: italic; font-weight: bold; font-size: 150%; }
+.style5 {font-family: Arial, Helvetica, sans-serif; font-style: italic; font-weight: bold; font-size: 150%; color: #CC33CC; }
+.style6 {
+	color: #660066
+}
+.style9 {font-family: Geneva, Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #000000; }
+.style10 {
+	color: #660066;
+	font-weight: bold;
+	font-style: italic;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+.style12 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+--> 
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColLiqLtHdr">
+
+<div id="container"> 
+  <div id="header">
+    <h1><img src="images/TREBLES.png" width="1024" height="225" /></h1>
+  <!-- end #header --></div>
+  <div class="fltrt" id="sidebar1">
+    <h3 align="center" class="style4">  <a href="index.html">Home </a></h3>
+    <h3 align="center" class="style4"><a href="about us.html">About Us</a> </h3>
+    <h3 align="center" class="style4"><a href="about the site.html">About The Site</a></h3>
+    <h3 align="center" class="style4"><a href="history of music.html">History Of Music</a></h3>
+    <h3 align="center" class="style4"><a href="musical genres.html">Musical Genres</a></h3>
+    <h3 align="center" class="style4"><a href="components of music.html">Components Of Music</a></h3>
+    <h3 align="center" class="style4"><a href="regional music.html">Regional Music</a></h3>
+    <h3 align="center" class="style5">Musical Culture</h3>
+    <h3 align="center" class="style4"><a href="musical Impact.html">Musical Impact</a></h3>
+    <h3 align="center" class="style4"><a href="overcoming musical hurdles.html">Overcoming Musical </a></h3>
+    <h3 align="center" class="style4"><a href="overcoming musical hurdles.html">Hurdles</a></h3>
+    <h3 align="center" class="style4"><a href="music buzz.html">Music Buzz</a></h3>
+    <h3 align="center" class="style4"><a href="instrumental diversity.html">Instrumental Diversity</a></h3>
+    <h3 align="center" class="style4"><a href="interactive zone.html">Interactive Zone</a></h3>
+    <h3 align="center" class="style4"><a href="musical thoughts.html">Musical Thoughts </a></h3>
+    <h3 align="center" class="style4"><a href="multimedia gallery.html">Multimedia Gallery</a></h3>
+    <h3 align="center" class="style4"><a href="surveys.html">Surveys </a></h3>
+    <h3 align="center" class="style4"><a href="credits.html">Credits</a></h3>
+    <p align="center" class="style3">&nbsp;</p>
+    <p align="center" class="style3"><img src="http://t3.gstatic.com/images?q=tbn:ANd9GcSqDNpo5LJfukXwry_vXrynTflbEyEpYEzv9cLPyMYhjTge96kzpw" alt="" width="259" height="221" id="rg_hi" data-width="259" data-height="194" /></p>
+    <h3 align="center" class="style3">&nbsp;</h3>
+    <p align="center" class="style3">&nbsp;</p>
+    <p align="center" class="style1">&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>
+      <!-- end #sidebar1 -->
+    </p>
+  </div>
+  <div id="mainContent">
+    <blockquote>
+      <blockquote>
+        <h1 class="style10">APPALACIAN CULTURE OF MUSIC</h1>
+        <p class="style9">Music has always been at the center of life in Southern Appalachia. The people  of this region are descendants of Scottish-Irish, English, Welsh, German, and  French settlers who came across the Atlantic 200 years ago, as well as people  of African American and Cherokee heritage. An oral musical tradition came with  these people, many of whom were laborers, servants, and farmers. Because the  southern Appalachian settlements were isolated from other groups of people by  the mountains, their music did not change very much over hundreds of years.  <img src="http://upload.wikimedia.org/wikipedia/commons/2/23/Virginia-stringband-1937.jpg" alt="" width="257" height="221" align="right"/> </p>
+        <p align="left" class="style9">Southern Appalachian  melodies are usually diatonic or modal and end on the tonic. They are in verse  form. Duple and triple meters are used, sometimes changing to accommodate the  words, melody, or the singer’s unique style. The literature includes songs,  play-party games, and ballads. The most frequently heard vocal form from this  region is the ballad—a song that tells a story. Each singer sings a ballad in  his or her own personal way. Sometimes new words are sung to an old melody. A  ballad can be based on an event in history, a humorous situation, a tragedy,  happiness, a religious topic, a heroic deed, or the supernatural. Singing  ballads provided entertainment for hundreds of years for people who did not  have computers, TV, or radios. Because most of the original European settlers  of Appalachia could not read, the stories contained in ballads were used to  teach the history, ethics, and morality of the community. Characters in ballad  stories who broke the rules suffered in some way. Some examples of ballads are  &quot;Old Joe Clark,&quot; &quot;Barbara Allen,&quot; &quot;Mister Frog Went  A-Courtin’,&quot; and &quot;Sourwood Mountain.&quot;<br />
+          <br />
+          The southern Appalachian area is known for its instrumental traditions,  particularly the music of the mountain dulcimer, fiddle, banjo, and limberjack.  <img src="http://asiasociety.org/files/imagecache/large/fa7accb82807caaec1850302077b6237_0.jpg" alt="" width="182" height="150" align="right"/> <br />
+          <br />
+          The mountain dulcimer, one of the earliest North American folk instruments,  looks like a long, thin violin with frets and three or four strings. On the  mountain dulcimer the melody is played on the highest-pitched string, and the  other strings are the drones. To play the dulcimer, hold the instrument across  the lap. Use the right hand to pluck the strings with a quill, a pick, or a  finger, and press the strings against the frets to change melody pitches with  the left hand, or use a wooden slide.<br />
+        </p>
+</blockquote>
+      <p class="style9"><ul>
+      </p>
+    </blockquote>
+    <p class="style9">
+      <ul>
+        <blockquote>
+          <p><span class="style12">The fiddle was brought to America by settlers from the British  Isles. It was used as a solo instrument and to accompany dancing. The  Appalachian fiddle is often held against the upper chest, not under the chin,  and the bow is held a bit in from the end. This is also a very old position of  classical violin playing that has remained unchanged in the isolated  communities of Appalachia for many, many years. Modern classical violinists use  a chin rest and hold the bow differently. Sometimes rattlesnake rattles have  been placed inside the body of the fiddle for a percussive effect.</span><br />
+            <br />
+            <span class="style12">The banjo was brought to the southern Appalachian area by traveling minstrel  shows or by European Americans who learned to play the instruments from  enslaved African Americans while visiting plantations. The banjo is a fretted  instrument with a round body and five strings and is either plucked with the  fingers or played with a pick. Early banjos were modeled after a West African  string instrument of a similar design.  <img src="http://www.appalachianhistory.net/wp-content/uploads/image-import/coon%2Bcreek.jpg" alt="" width="241" height="189" align="right"/> </span> <br />
+            <br />
+            <span class="style12">A unique percussion instrument of Southern Appalachia is the limberjack—a  wooden doll-like figure attached to a stick on the back. The player sits on one  end of a board and suspends the doll over the free end of the board. When the  player hits the free end of the board it moves up and down, hitting the doll  and causing it to bounce around. The sound made by the bouncing wooden doll is  similar to that made by Appalachian clog dancers.</span><br />
+            <br />
+            <span class="style12">A look at the music of Southern Appalachia gives us a fascinating peek into the  past from the present. We can experience a living oral tradition that in some  ways has not changed at all from the time settlers came over from Europe long  ago. </span></p>
+        </blockquote>
+        <ul>
+          <li></li>
+        </ul>
+        <blockquote>
+          <p><a href="musical culture.html" class="style12">BACK TO MUSICAL CULTURE</a></p>
+        </blockquote>
+</ul>
+    </p>
+    <p class="style9">&nbsp;</p>
+    <p class="style6"></p>
+    <p class="style9">&nbsp;</p>
+    <p class="style6">&nbsp;</p>
+  <!-- end #mainContent --></div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+  <div id="footer"><!-- end #footer -->
+  </div>
+<!-- end #container --></div>
